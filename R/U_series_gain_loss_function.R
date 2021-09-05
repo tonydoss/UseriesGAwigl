@@ -233,8 +233,6 @@ U_series_gain_loss_function <- function(
 
   # graphs ------------------------------------------------------------------
 
-  # library(ggplot2)
-
   theme_plots <- ggplot2::theme(plot.title = ggplot2::element_text(face = "bold", size = (15), hjust = 0.5),
                        legend.title=ggplot2::element_blank(),
                        axis.title.y = ggplot2::element_text(size=18),
