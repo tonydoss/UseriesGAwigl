@@ -5,9 +5,9 @@ account: anthony-dosseto
 server: shinyapps.io
 hostUrl: https://api.shinyapps.io/v1
 appId: 4594395
-bundleId: 5001046
+bundleId: 5001064
 url: https://anthony-dosseto.shinyapps.io/UseriesGAwigl/
-when: 1630814488.3677
-lastSyncTime: 1630814488.3687
+when: 1630815347.58252
+lastSyncTime: 1630815347.58252
 asMultiple: FALSE
 asStatic: FALSE
