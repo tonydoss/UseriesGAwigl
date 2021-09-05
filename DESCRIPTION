@@ -1,0 +1,21 @@
+Package: UseriesGAwigl
+Type: Package
+Title: Calculate weathering ages from uranium-series activity ratios in weathering profiles, using a genetic algorithm for optimisation
+Version: 0.1.0
+Author: Anthony Dosseto
+Maintainer: Anthony Dosseto <tonyd@uow.edu.au>
+Description: This package models (234U/238U) and (230Th/238U) measured in a weathering profile to derive weathering ages. The deepest sample is used as initial conditions, so the weathering ages calculated are the amount of time elapsed since onset of weathering from the deepest sample as starting point. This assumes that at onset of weathering, the weathering profile had the composition of the deepest sample throughout.
+License: MIT + file LICENSE
+Encoding: UTF-8
+LazyData: true
+Imports:
+    ggplot2,
+    cowplot,
+    GA,
+    shiny,
+    waiter,
+    DT
+Suggests: 
+    testthat (>= 3.0.0)
+Config/testthat/edition: 3
+RoxygenNote: 7.1.1
