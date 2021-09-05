@@ -150,12 +150,12 @@ server <- function(input, output, session) {
         }
 
         output_model <- UseriesGAwigl::U_series_gain_loss_function(input_data, nbit = input$nbit,
-                                                    logT_min = input$logT_min, logT_max = input$logT_max,
-                                                    Tmult_min = input$Tmult_min,
-                                                    logk238_min = input$logk238_min, logk238_max = input$logk238_max,
-                                                    k48_min = input$k48_min, k48_max = input$k48_max,
-                                                    logf238_k238_min = input$logf238_k238_min, logf238_k238_max = input$logf238_k238_max,
-                                                    f48_min = input$f48_min, f48_max = input$f48_max)
+                                                                   logT_min = input$logT_min, logT_max = input$logT_max,
+                                                                   Tmult_min = input$Tmult_min,
+                                                                   logk238_min = input$logk238_min, logk238_max = input$logk238_max,
+                                                                   k48_min = input$k48_min, k48_max = input$k48_max,
+                                                                   logf238_k238_min = input$logf238_k238_min, logf238_k238_max = input$logf238_k238_max,
+                                                                   f48_min = input$f48_min, f48_max = input$f48_max)
         # output_model
         # })
 
