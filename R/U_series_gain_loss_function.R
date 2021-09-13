@@ -58,6 +58,9 @@ U_series_gain_loss_function <- function(
 
   # nbrun <- 100 # the number of consecutive generations without any improvement in the best fitness value before the GA is stopped
   # elitism <- 10 # the number of best fitness individuals to survive at each generation. By default the top 5% individuals will survive at each iteration
+  # maxfit <- -0.01
+  # selection <- "gareal_lrSelection"
+  # popsize <- 100
 
   # Set inital range of values -----------------------------------------------------
 
@@ -180,6 +183,9 @@ U_series_gain_loss_function <- function(
   GA <- GA::ga(type = "real-valued", fitness = function(x) -fn(x),
            lower = min_val, upper = max_val,
            # elitism = elitism, run = nbrun,
+           # maxFitness = maxfit,
+           # popSize = popsize,
+           # selection = selection,
            maxiter = nbit, seed = 123, monitor = F)
 
   solution <- GA@solution
@@ -273,7 +279,7 @@ U_series_gain_loss_function <- function(
 
   # finish ------------------------------------------------------------------
   # Regolith production rate (mm/kyr)
-  rate <- (depth[nb_sample]-depth[1])*1e6/(T[1] - T[nb_sample])
+  rate <- (df$Depth..m.[nb_sample+1]-df$Depth..m.[1])*1e6/T[1]
   print(print_plot)
   solution_df <- as.data.frame(t(c(k238, k234/k238, f238/k238, f234/f238, r48i, r08i)))
   solution_list <- list(regolith_production_rate = rate,
